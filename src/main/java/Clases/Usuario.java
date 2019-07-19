@@ -1,6 +1,6 @@
 package Clases;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import servicios.ServiciosArticulos;
 
 import javax.persistence.*;
