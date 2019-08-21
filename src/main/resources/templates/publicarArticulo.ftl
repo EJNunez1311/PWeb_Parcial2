@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 
 <head>
+    <!-- bootstrap core css -->
+    <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+
+    <!-- custom styles for this template -->
+    <link href="/css/blog-home.css" rel="stylesheet"/>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +17,7 @@
     <title>${titulo}</title>
 
     <style>
-        .editorContainer{
+        .editorcontainer{
             border-radius: 5px;
             background-color: aliceblue;
             padding: 20px;
@@ -45,22 +51,18 @@
         .tags{
             width: 50%;
         }
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
-        <link href="css/blog-home.css" rel="stylesheet">
     </style>
-
 
 </head>
 
+<body>
 <br>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/">Blog de Artículos</a>
+        <a class="navbar-brand" href="/">Blog de Articulos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,7 +76,7 @@
                 <#if logUser??>
                     <#if logUser.administrador || logUser.autor>
                         <li class="nav-item">
-                            <a class="nav-link" href="/publicarArticulo">Artículos</a>
+                            <a class="nav-link" href="/publicarArticulo">Articulos</a>
                         </li>
                     </#if>
                 </#if>
@@ -88,11 +90,11 @@
                 </#if>
                 <#if logUser??>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Cerrar sesión</a>
+                        <a class="nav-link" href="/logout">Cerrar sesion</a>
                     </li>
                 <#else>
                     <li class="nav-item">
-                        <a class="nav-link" href="/iniciarSesion">Iniciar sesión</a>
+                        <a class="nav-link" href="/iniciarSesion">Iniciar sesion</a>
                     </li>
                 </#if>
             </ul>
@@ -106,13 +108,13 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            <h1 class="my-4">Publicar Artículo</h1>
+            <h1 class="my-4">Publicar Articulo</h1>
         </div>
         <div class="editorContainer">
             <form method="post" action="/procesarArticulo">
                 <div>
                     <div class="element">
-                        <label><b>Título</b></label>
+                        <label><b>Titulo</b></label>
                     </div>
                     <div class="element">
                         <input type="text" name="title">
@@ -120,7 +122,7 @@
                 </div>
                 <div>
                     <div class="element">
-                        <textarea name="cuerpo"  type="text" placeholder="Escribe aquí..." style="height:200px"></textarea>
+                        <textarea name="cuerpo"  type="text" placeholder="Escribe aqui..." style="height:200px"></textarea>
                     </div>
                 </div>
                 <div class="element">
@@ -141,7 +143,7 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Gerard Website 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Edgar Website 2019</p>
     </div>
     <!-- /.container -->
 </footer>

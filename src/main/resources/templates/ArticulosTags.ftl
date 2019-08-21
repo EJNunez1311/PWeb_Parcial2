@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -9,13 +9,13 @@
     <meta name="author" content="">
 
     <title>${titulo}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog-home.css" rel="stylesheet">
 
     <style>
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link href="css/blog-home.css" rel="stylesheet">
         .editBtn{
             background-color: #007bff;
             color: #fff;
@@ -182,7 +182,7 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Gerard Website 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Edgar Website 2019</p>
     </div>
     <!-- /.container -->
 </footer>

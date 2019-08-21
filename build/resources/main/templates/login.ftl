@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <meta charset="UTF-8">
 <head>
     <title>${titulo}</title>
@@ -52,19 +52,19 @@
 <body>
 <div class="titulo">
     <h1>Blog </h1>
-    <h3> Iniciar sesión</h3>
+    <h3> Log In</h3>
 </div>
 <form action="/procesarUsuario" method="post">
     <div class="loginContainer">
-        <label><b>Nombre de usuario</b></label>
-        <input type="text" name="username" placeholder="Introduzca su nombre de usuario" required>
+        <label><b>Username</b></label>
+        <input type="text" name="username" placeholder="Your username" required>
 
-        <label><b>Contraseña</b></label>
-        <input type="password" name="password" placeholder="Introduzca su contraseña"  required>
+        <label><b>Password</b></label>
+        <input type="password" name="password" placeholder="Your password"  required>
 
         <button type="submit">Entrar</button>
         <label>
-            <input type="checkbox" name="recordar"> Recordarme
+            <input type="checkbox" name="recordar"> Remember me
         </label>
     </div>
 </form>

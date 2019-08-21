@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -9,6 +9,12 @@
     <meta name="author" content="">
 
     <title>${titulo}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog-home.css" rel="stylesheet">
 
     <style>
         .editorContainer{
@@ -46,11 +52,7 @@
             width: 50%;
         }
     </style>
-    <!-- Bootstrap core CSS -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/css/blog-home.css" rel="stylesheet">
 
 </head>
 
@@ -140,13 +142,14 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Gerard Website 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Edgar Website 2019</p>
     </div>
     <!-- /.container -->
 </footer>
 
 <!-- Bootstrap core JavaScript -->
 <script src="/vendor/jquery/jquery.min.js"></script>
+
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>

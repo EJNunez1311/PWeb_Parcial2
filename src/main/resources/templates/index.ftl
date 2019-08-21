@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -8,15 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="css/blog-home.css" rel="stylesheet">
     <style>
         <title>${titulo}</title>
-
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link href="css/blog-home.css" rel="stylesheet">
         .editBtn{
             background-color: #007bff;
             color: #fff;
@@ -41,7 +39,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/">Blog de Gérard</a>
+        <a class="navbar-brand" href="/">Blog de Edgar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +53,7 @@
                 <#if logUser??>
                     <#if logUser.administrador || logUser.autor>
                         <li class="nav-item">
-                            <a class="nav-link" href="/publicarArticulo">Artículos</a>
+                            <a class="nav-link" href="/publicarArticulo">Articulos</a>
                         </li>
                     </#if>
                 </#if>
@@ -69,11 +67,11 @@
                 </#if>
                 <#if logUser??>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Cerrar sesión</a>
+                        <a class="nav-link" href="/logout">Cerrar sesion</a>
                     </li>
                 <#else>
                     <li class="nav-item">
-                        <a class="nav-link" href="/iniciarSesion">Iniciar sesión</a>
+                        <a class="nav-link" href="/iniciarSesion">Iniciar sesion</a>
                     </li>
                 </#if>
             </ul>
@@ -89,8 +87,8 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-            <h1 class="my-4">Artículos
-                <small>Últimas publicaciones</small>
+            <h1 class="my-4">Articulos
+                <small>Ultimas publicaciones</small>
             </h1>
 
             <!-- Blog Post -->
@@ -108,7 +106,7 @@
                         <p class="card-text">
                             ${articulo.textoResumido()}
                         </p>
-                        <a href="/leerArticuloCompleto/${articulo.id}" class="btn btn-primary">Leer más &rarr;</a>
+                        <a href="/leerArticuloCompleto/${articulo.id}" class="btn btn-primary">Leer mas &rarr;</a>
                     </div>
                     <div class="card-footer text-muted">
                         Subido en ${articulo.fechaText()} por
@@ -182,7 +180,7 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Gerard Website 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Edgar Website 2019</p>
     </div>
     <!-- /.container -->
 </footer>
