@@ -51,7 +51,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/"> Gestión de Usuarios</a>
+        <a class="navbar-brand" href="/"> Blog de Edgar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,7 +86,7 @@
                     <td>${usuario.nombre}</td>
                 </tr>
                 <tr>
-                    <th>Contraseña:</th>
+                    <th>Contrasena:</th>
                     <td>${usuario.password}</td>
                 </tr>
                 <tr>
