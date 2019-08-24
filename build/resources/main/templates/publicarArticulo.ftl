@@ -109,8 +109,6 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
             <h1 class="my-4">Publicar Articulo</h1>
-        </div>
-        <div class="editorContainer">
             <form method="post" action="/procesarArticulo">
                 <div>
                     <div class="element">
@@ -136,6 +134,9 @@
                     <button type="submit">Publicar</button>
                 </div>
             </form>
+        </div>
+        <div class="editorContainer">
+
         </div>
     </div>
 </div>
